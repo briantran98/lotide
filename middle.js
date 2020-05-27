@@ -32,11 +32,11 @@ const middle = function(array) {
   return middleArray;
 };
 
+// Test Cases
 const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8];
 const numbers2 = [1, 2, 3, 4, 5, 6, 7];
 const numbers3 = [1, 2, 3, 4, 5, 6];
 const numbers4 = [1, 2, 3, 4, 5];
-
 
 console.log(assertArraysEqual(middle(numbers2), [4]));
 console.log(assertArraysEqual(middle(numbers4), [3]));
