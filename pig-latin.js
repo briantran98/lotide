@@ -6,9 +6,9 @@ const pigLatin = function(stringArray) {
     for (let i = 1; i < string.length; i++) {
       pigString += string.charAt(i);
     }
-    pigString += `${string.charAt(0)}ay`
+    pigString += `${string.charAt(0)}ay`;
     console.log(pigString);
   });
-}
+};
 
 pigLatin(args);

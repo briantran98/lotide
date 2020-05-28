@@ -1,12 +1,4 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} === ${expected}`);
-  }
-};
-
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
@@ -16,17 +8,16 @@ const eqArrays = function (array1, array2) {
     }
   }
   return true;
-}  
+};
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function (obj1, obj2) {
+const eqObjects = function(obj1, obj2) {
   let same = false;
   const size1 = Object.keys(obj1).length;
   const size2 = Object.keys(obj2).length;
   if (size1 === size2) {
     for (const key in obj1) {
-      console.log(key)
       if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) {
         same = eqArrays(obj1[key], obj2[key]);
       } else if (typeof obj1[key] === "object" && typeof obj2[key] === "object") {
@@ -37,7 +28,7 @@ const eqObjects = function (obj1, obj2) {
         return false;
       }
     }
-  };
+  }
   return same;
 };
 
