@@ -23,10 +23,18 @@ const planet = {
   "Akelarre":  { stars: 3 }
 };
 
+const person = {
+  name: "Brian",
+  phoneNumber: "604193450",
+  address: "Somewhere in the world" 
+};
+
 const key1 = findKey(planet, x => x.stars === 2); // => "noma"
 const key2 = findKey(planet, x => x.stars === 1); // => "Blue Hill"
 const key3 = findKey(planet, x => x.stars === 3); // => "Akaleri"
+const key4 = findKey(person, x => x === "Brian");
 
 assertEqual(key1, "noma");
 assertEqual(key2, "Blue Hill");
 assertEqual(key3, "Akaleri");
+assertEqual(key4, "name");
