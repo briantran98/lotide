@@ -19,7 +19,7 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 const map = function(array, callback) {
-  const results =[];
+  const results = [];
   for (let item of array) {
     results.push(callback(item))
   }
