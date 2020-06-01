@@ -6,11 +6,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("lighthouse", "lighthouse");
-assertEqual("lighthouse", "light");
-
-assertEqual("lighthouse", "lighthouse");
-assertEqual(5, "lighthouse");
-
-assertEqual(123, 123);
-assertEqual("123", 123);
+module.exports = assertEqual;
