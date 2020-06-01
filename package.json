@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@btran210/lotide",
   "version": "1.0.0",
   "description": "Lotide is a project to make from scratch a library that emulates lodash",
   "main": "assertArraysEqual.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/briantran98/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brian Tran <98brian.tran@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/briantran98/lotide/issues"
